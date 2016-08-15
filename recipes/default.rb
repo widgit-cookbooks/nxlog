@@ -61,7 +61,7 @@ else
 end
 
 service 'nxlog' do
-  action [:enable, :start]
+  action [:enable]
 end
 
 template "#{node['nxlog']['conf_dir']}/nxlog.conf" do
