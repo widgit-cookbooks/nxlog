@@ -2,7 +2,7 @@ language: ruby
 gemfile:
 - Gemfile
 rvm:
-- 2.2
+- 2.3
 bundler_args: "--without development integration"
 before_script: bundle exec berks install
 script: bundle exec rake test
