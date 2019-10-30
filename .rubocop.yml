@@ -3,7 +3,7 @@ AllCops:
     - '.kitchen/**/*'
     - 'vendor/bundle/**/*'
 
-Style/SingleSpaceBeforeFirstArg:
+Style/SpaceBeforeFirstArg:
   Enabled: false
 
 Style/NumericLiterals:
