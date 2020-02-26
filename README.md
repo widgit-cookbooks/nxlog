@@ -1,3 +1,7 @@
+# We no longer use or update this cookbook
+
+It has been adopted by these lovely people, and you should use their fork instead: https://github.com/sous-chefs/sc-nxlog
+
 # NXLog Chef Cookbook 
 
 [![Build Status](https://secure.travis-ci.org/widgit-cookbooks/nxlog.svg?branch=master)](https://travis-ci.org/widgit-cookbooks/nxlog)
