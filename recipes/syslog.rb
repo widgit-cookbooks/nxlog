@@ -31,7 +31,7 @@ service old_logger do
 end
 
 destinations = [node['nxlog']['syslog']['destinations']].flatten.map do |d|
-  d == ':defaults' ? :defaults : d
+  d == 'defaults' ? 'defaults' : d
 end
 
 bash 'remove_log_node' do

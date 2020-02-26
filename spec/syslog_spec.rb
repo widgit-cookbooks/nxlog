@@ -29,7 +29,7 @@ describe 'nxlog::syslog' do
       uds: '/var/run/nxlog/devlog',
       exec: 'parse_syslog_bsd();',
       flow_control: false,
-      destination: [:defaults]
+      destination: ['defaults']
     )
   end
 end

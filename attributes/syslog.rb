@@ -17,5 +17,5 @@
 # limitations under the License.
 #
 
-default['nxlog']['syslog']['destinations'] = :defaults
+default['nxlog']['syslog']['destinations'] = 'defaults'
 default['nxlog']['syslog']['logger_disable'] = 'rsyslog'

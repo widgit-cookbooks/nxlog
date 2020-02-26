@@ -52,7 +52,7 @@ node.override['nxlog'] = JSON.parse(<<EOT)
     "test_im_mark_4": {
       "input_module": "im_mark",
       "mark_interval": 1,
-      "destination": ["foo", "bar", ":defaults"]
+      "destination": ["foo", "bar", "defaults"]
     }
   }
 }

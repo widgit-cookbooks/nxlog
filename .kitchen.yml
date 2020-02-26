@@ -85,7 +85,7 @@ suites:
             mark: -> -> MARK <- <-
             destination:
               - test
-              - :defaults
+              - defaults
 
   - name: attribute_resources_windows
     run_list:
@@ -117,7 +117,7 @@ suites:
             mark: -> -> MARK <- <-
             destination:
               - test
-              - :defaults
+              - defaults
 
   - name: syslog
     run_list:

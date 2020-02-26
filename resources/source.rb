@@ -27,7 +27,7 @@ attribute :input_module, kind_of: String, default: 'im_file', required: true,
                          equal_to: %w(im_exec im_file im_internal im_kernel
                                       im_mark im_mseventlog im_msvistalog
                                       im_null im_ssl im_tcp im_udp im_uds)
-attribute :destination, kind_of: [String, Array], default: :defaults
+attribute :destination, kind_of: [String, Array], default: 'defaults'
 attribute :input_type, kind_of: String
 attribute :exec, kind_of: String
 attribute :flow_control, kind_of: [TrueClass, FalseClass]
@@ -51,7 +51,7 @@ attribute :rename_check, kind_of: [TrueClass, FalseClass]
 attribute :close_when_idle, kind_of: [TrueClass, FalseClass]
 attribute :poll_interval, kind_of: Float
 attribute :dir_check_interval, kind_of: Float
-attribute :active_files, kind_of: Fixnum
+attribute :active_files, kind_of: Integer
 
 # im_internal
 
@@ -59,7 +59,7 @@ attribute :active_files, kind_of: Fixnum
 
 # im_mark
 attribute :mark, kind_of: String
-attribute :mark_interval, kind_of: Fixnum
+attribute :mark_interval, kind_of: Integer
 
 # im_mseventlog
 attribute :sources, kind_of: Array
@@ -75,7 +75,7 @@ attribute :channel, kind_of: String
 
 # im_ssl, im_tcp, im_udp
 attribute :host, kind_of: String, default: 'localhost'
-attribute :port, kind_of: Fixnum # required
+attribute :port, kind_of: Integer # required
 
 # im_ssl
 attribute :cert_file, kind_of: String
@@ -88,7 +88,7 @@ attribute :crl_dir, kind_of: String
 attribute :allow_untrusted, kind_of: [TrueClass, FalseClass]
 
 # im_udp
-attribute :sock_buf_size, kind_of: Fixnum
+attribute :sock_buf_size, kind_of: Integer
 
 # im_uds
 attribute :uds, kind_of: String, default: '/dev/log'
