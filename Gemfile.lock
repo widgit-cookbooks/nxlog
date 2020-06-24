@@ -187,7 +187,7 @@ GEM
     pusher-client (0.6.2)
       json
       websocket (~> 1.0)
-    rack (2.0.8)
+    rack (2.2.3)
     rainbow (2.2.2)
       rake
     rake (10.4.2)
